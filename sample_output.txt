@@ -1,0 +1,16 @@
+CUDA Image Processing Accelerator
+Input: data/input.ppm
+Image: 512 x 512
+
+CPU grayscale time: 1.20 ms
+CPU Sobel time: 8.45 ms
+GPU Sobel kernel time: 0.31 ms
+GPU kernel speedup: 27.26x
+CPU/GPU result match: YES
+CPU output: output/cpu_edges.pgm
+GPU output: output/gpu_edges.pgm
+
+NOTE: This log is a SAMPLE/DEMO output. The timing values were not measured
+on the user's machine because CUDA/nvcc and an NVIDIA GPU are not available
+in the current Windows environment. The generated PGM files are reference
+outputs produced from the supplied input using the same Sobel calculation.
